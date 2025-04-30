@@ -1,0 +1,7 @@
+/* Main userChrome entry point for styling Thunderbird’s interface */
+@import url("./config/colors.css");
+@import url("./config/variables.css");
+@import url("./css/toolbars.css");
+@import url("./css/panes.css");
+@import url("./css/tabs.css");
+@import url("./css/inputs.css");

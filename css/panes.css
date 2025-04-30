@@ -1,0 +1,212 @@
+/* Pane-related styling for folder, message, and splitters */
+@import url("../config/colors.css");
+@import url("../config/variables.css");
+
+#folderPaneHeaderBar,
+#folderPane,
+#threadPane,
+#messagePane {
+  background: var(--color-bg-pane) !important;
+  border-radius: var(--radius) !important;
+  margin: var(--margin) !important;
+  border: none !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+#folderPane {
+  position: relative !important;
+  background-color: var(--color-bg-pane) !important;
+  border-radius: var(--radius) !important;
+  margin: var(--margin) !important;
+  border: none !important;
+  padding-inline: var(--margin) !important;
+  box-sizing: content-box !important;
+}
+#messagepane {
+  margin: 10px !important;
+  border-radius: 5px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Add white border to messagePane */
+
+/* White border on focused pane */
+#messagePane:focus-within,
+#folderPane:focus-within,
+#threadPane:focus-within {
+  border: 2px solid var(--color-focused-pane-border) !important;
+  z-index: 1;
+}
+
+/* Create a pseudo-element for the texture */
+#folderPane::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("../figures/dust.png") !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  opacity: 0.01 !important; /* Very low opacity for subtle effect */
+  pointer-events: none !important; /* Allow clicking through to the folder pane */
+  z-index: 0 !important;
+  border-radius: var(--radius) !important;
+}
+
+#threadPane {
+  margin: var(--margin) 0 !important;
+}
+#threadPaneHeaderBar {
+  padding-inline: 5px !important;
+  background-color: var(--color-bg-pane)!important;
+}
+
+#singleMessage {
+  background-color: var(--color-bg-pane) !important;
+}
+#header-view-toolbar {
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-bg-pane) 2em
+  ) !important;
+}
+
+/* Element | chrome://messenger/content/messenger.xhtml */
+
+#tabpanelcontainer {
+  background: var(--color-bg-main-new) !important;
+}
+
+#preferencesTabBrowser0 {
+  margin: 10px !important;
+  border-radius: 10px !important;
+}
+
+#chatTabPanel {
+  margin: 7px;
+  border-radius: 10px;
+}
+
+#calControlBarMenuPopup {
+  margin: 7px;
+  border-radius: 10px;
+}
+
+#calSidebar {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#calendarDisplayBox {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--color-focused-pane-border) !important;
+}
+
+#booksPane {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#cardsPane {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--color-focused-pane-border) !important;
+}
+
+&[rows="ab-card-row"] {
+  border-top: 1px solid var(--splitter-color) !important;
+}
+
+.tree-view-scrollable-container {
+  background-color: var(--tree-view-bg) !important;
+}
+
+[is="tree-view-table-body"] {
+  & > .card-layout {
+    background-color: var(--color-bg-main-new) !important;
+  }
+}
+
+#detailsPane {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--color-focused-pane-border) !important;
+}
+
+#sharedSplitter {
+  border-style: none !important;
+  background: transparent !important;
+  width: 4px !important;
+}
+
+#booksSplitter {
+  border-style: none !important;
+  background: transparent !important;
+  width: 4px !important;
+}
+
+#calsidebar_splitter {
+  border-style: none !important;
+  background: transparent !important;
+  width: 4px !important;
+}
+
+#contentTab0 {
+  background: var(--color-bg-main-new) !important;
+}
+
+#contentTabBrowser0 {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.list-header-title {
+  font-family: var(--font-main) !important;
+  font-variant-caps: all-petite-caps !important;
+}
+
+.message-header-large-subject #expandedsubjectBox {
+  font-size: 1em !important;
+  font-weight: 500 !important;
+}
+
+#folderPaneSplitter,
+#messagePaneSplitter {
+  border-style: none !important;
+  background: transparent !important;
+  width: 4px !important;
+}
+
+#mail-notification-top {
+  display: none !important;
+}
+
+.message-header-large-subject .headerButton {
+  display: none !important;
+}
+
+.card-container {
+  border-radius: 0 !important;
+  background-color: var(--color-bg-card) !important;
+  border-width: 0px!important;
+}
+
+[is="tree-view-table-body"] {
+  & > .card-layout > td {
+  border-radius: 0px!important;
+  padding-inline: 0px!important;
+  padding-block: 0px!important;
+  }
+  }
+
+.card-container:hover {
+  background-color: var(--color-hover-new) !important;
+}
+
+.card-container[selected="true"] {
+  background-color: var(--color-accent-new) !important;
+}

@@ -1,0 +1,7 @@
+/* Global spacing, sizing, and font variables for the Thunderbird custom theme */
+:root {
+  --radius: 10px;
+  --margin: 15px;
+  --font-main: "SF Pro Display", system-ui, sans-serif;
+  --tab-max-width2: 140px;
+}

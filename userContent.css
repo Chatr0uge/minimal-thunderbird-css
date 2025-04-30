@@ -1,0 +1,8 @@
+/* Styles that apply to message content within Thunderbird */
+@import url("./config/colors.css");
+@import url("./config/variables.css");
+
+.img {
+  border-radius: var(--radius-sm);
+  max-width: 100%;
+}

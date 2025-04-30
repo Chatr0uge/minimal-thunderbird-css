@@ -1,0 +1,39 @@
+/* Toolbar and navigation elements styling */
+@import url("../config/colors.css");
+@import url("../config/variables.css");
+
+#messenger-toolbox,
+#navigation-toolbox,
+#tabs-toolbar,
+#unifiedToolbar,
+#quick-filter-bar,
+#status-bar {
+  background: var(--color-bg-main-new) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.toolbarbutton,
+.tabmail-tab {
+  border-radius: var(--radius) !important;
+  background: transparent !important;
+  color: var(--color-text-new) !important;
+  font-family: var(--font-main) !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important; /* Add transition */
+}
+
+.toolbarbutton:hover,
+.tabmail-tab:hover {
+  background: var(--color-hover-new) !important;
+}
+
+.tabmail-tab[selected="true"],
+.toolbarbutton:active {
+  background: var(--color-accent-new) !important;
+  color: #fff !important;
+}
+
+.toolbarseparator,
+.menuseparator {
+  border: none !important;
+}

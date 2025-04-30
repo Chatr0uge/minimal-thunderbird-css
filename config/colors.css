@@ -1,0 +1,12 @@
+/* Color palette variables for consistent theming across components */
+:root {
+  --color-bg-main-new: #0f0f0f;
+  --color-bg-pane: #1b1a1a; /* Slightly lighter */
+  --color-accent-new: #585454;  /* Fresh accent */
+  --color-border: #222326;
+  --color-text-new: #f5f6fa;
+  --color-hover-new: #585454;
+  --color-focused-pane-border: #8d8585; /* Accent color for focused pane */
+  --color-accent-new-soft: rgba(88,84,84,0.4); /* Semi-transparent version of accent color */
+  --color-bg-card: #1b1a1a; /* Background color for cards/inputs */
+}

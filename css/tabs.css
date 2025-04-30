@@ -1,0 +1,28 @@
+/* Tab styling for Thunderbird’s tabmail interface */
+@import url("../config/colors.css");
+@import url("../config/variables.css");
+
+.tabmail-tab {
+  max-width: var(--tab-max-width2) !important;
+  margin-left: calc(var(--margin) / 2) !important;
+  border-radius: var(--radius) !important;
+  background: transparent !important;
+  color: var(--color-text-new) !important;
+  font-family: var(--font-main) !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.tabmail-tab[selected="true"] {
+  background: var(--color-accent-new) !important;
+  color: #fff !important;
+}
+
+.tab-background[selected="true"] {
+  background-color: transparent !important;
+}
+
+.tab-line[selected="true"] {
+  background-color: transparent !important;
+}
+
+

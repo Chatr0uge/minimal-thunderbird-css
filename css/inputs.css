@@ -1,0 +1,51 @@
+/* Input, textarea, and other form element styling */
+@import url("../config/colors.css");
+@import url("../config/variables.css");
+
+input,
+toolbartextbox,
+.search-box-input,
+textarea {
+  border-radius: var(--radius) !important;
+  background-color: var(--color-bg-card) !important;
+  color: var(--color-text-new) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+input:focus,
+toolbartextbox:focus,
+.search-box-input:focus,
+textarea:focus {
+  border-color: var(--color-accent-new) !important;
+  box-shadow: 0 0 0 2px var(--color-accent-new-soft) !important;
+  outline: none !important;
+}
+
+/* Search input styling */
+.searchBox {
+  max-width: 300px !important;
+  height: 32px !important;
+  background: var(--color-bg-card) !important;
+  border-radius: var(--radius) !important;
+}
+
+.searchBox .search-box-input {
+  margin-left: 8px !important;
+  padding-left: 28px !important;
+  background-image: url("chrome://messenger/skin/icons/search.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: 8px center !important;
+  background-size: 16px !important;
+}
+
+/* Dropdown menus */
+.menulist {
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  border: 1px solid var(--color-border) !important;
+  padding: 4px 8px !important;
+}
+
+.menulist:hover {
+  border-color: var(--color-accent-new) !important;
+}
